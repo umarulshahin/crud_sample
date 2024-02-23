@@ -1,0 +1,22 @@
+{%extends 'include.html'%}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+</head>
+<body>
+    {%block content%}
+    <h1>Home</h1>
+
+   {%for obj in movie%}
+   <h1>Title:{{obj.Name}}</h1>
+   <h4>Year:{{obj.Year}}</h4>
+   <h5>summery:{{obj.discription}}</h5>
+    
+   {%endfor%}
+   {%endblock%}
+</body>
+</html>

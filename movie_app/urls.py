@@ -28,4 +28,6 @@ urlpatterns = [
     path('create/',views.Create,name='create'),
     
     path('Edit/',views.Edit,name='edit'),
+    
+    
 ]
